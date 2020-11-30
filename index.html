@@ -40,18 +40,26 @@
         </div>
         <div class="infoPage" id="contact">
             <p class="contactTitle">Contact</p>
-            <form method=”post” name=”contact_form” action=form-handler.php”>
-
-                Your Name:
-                <input type=”text” name=”name”>
-
-                Email Address:
-                <input type=”text” name=”email”>
-
-                Message:
-                <textarea name=”message”></textarea>
-
-                <input type=submit value=Send>
+            <form action="mailto:meliatomlinson2022@u.northwestern.edu" method="get" enctype="text/plain">
+                <div>
+                    <label for="name">Name:
+                        <input type="text" name="name" id="name" />
+                    </label>
+                </div>
+                <div>
+                    <label for="email">Email:
+                        <input type="text" name="email" id="email" />
+                    </label>
+                </div>
+                <div>
+                    <label>Comments:</label>
+                    <br />
+                    <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Send" />
+                    <input type="reset" name="reset" value="Clear Form" />
+                </div>
             </form>
         </div>
     </div>
