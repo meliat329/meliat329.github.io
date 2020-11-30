@@ -40,26 +40,15 @@
         </div>
         <div class="infoPage" id="contact">
             <p class="contactTitle">Contact</p>
-            <form action="mailto:meliatomlinson2022@u.northwestern.edu" method="get" enctype="text/plain">
-                <div>
-                    <label for="name">Name:
-                        <input type="text" name="name" id="name" />
-                    </label>
-                </div>
-                <div>
-                    <label for="email">Email:
-                        <input type="text" name="email" id="email" />
-                    </label>
-                </div>
-                <div>
-                    <label>Comments:</label>
-                    <br />
-                    <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
-                </div>
-                <div>
-                    <input type="submit" name="submit" value="Send" />
-                    <input type="reset" name="reset" value="Clear Form" />
-                </div>
+            <form action="mailto:meliatomlinson2022@u.northwestern.edu" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" name="name"><br>
+                E-mail:<br>
+                <input type="text" name="mail"><br>
+                Comment:<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
             </form>
         </div>
     </div>
