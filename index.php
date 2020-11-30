@@ -8,6 +8,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <?php
+    $errors = ”;
+    $myemail = "meliatomlinson2022@u.northwestern.edu";
+    
+    empty($_POST["email"]) ||
+    
+    empty($_POST["message"])
+    
+    {
+    
+    $errors .= "\n Error: all fields are required";
+    
+    }
+    
+    $name = $_POST["name"];
+    
+    $email_address = $_POST["email"];
+    
+    $message = $_POST["message"];
+    
+    if (!preg_match(
+    
+    "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
+    
+    {
+    
+    $errors .= "\n Error: Invalid email address";
+    
+    }
+    
+    if( empty($errors))
+    
+    {
+    
+    $to = $myemail;
+    
+    $email_subject = "Contact form submission: $name";
+    
+    $email_body = "You have received a new message. ".
+    
+    "Here are the details:\n Name: $name \n ".
+    
+    "Email: $email_address\n Message \n $message";
+    
+    $headers = "From: $myemail\n";
+    
+    $headers .= "Reply-To: $email_address";
+    
+    mail($to,$email_subject,$email_body,$headers);
+    
+    }
+    ?>
+
 </head>
 
 <body>
@@ -40,16 +94,18 @@
         </div>
         <div class="infoPage" id="contact">
             <p class="contactTitle">Contact</p>
-            <form method=”post” name=”contact_form” action=”contact-form-handler.php”> Your Name: <input type=”text”
-                    name=”name”>
+            <form method=”post” name=”contact_form” action=index.php”>
+
+                Your Name:
+                <input type=”text” name=”name”>
+
                 Email Address:
+                <input type=”text” name=”email”>
 
-                <input type=”text” name=”email”> Message:
-
+                Message:
                 <textarea name=”message”></textarea>
 
                 <input type=submit value=Send>
-
             </form>
         </div>
     </div>
