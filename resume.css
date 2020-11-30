@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+.loadup {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(
+        to right,
+        #FF2400 0%,
+        #FF2400 50%,
+        #FFFFFF 50%,
+        #FFFFFF 100%
+    );
+    display: flex;
+    align-items: center;
+}
+
+.dLeft {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    width: 50vw;
+    text-align: right;
+}
+
+.cRight {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    width: 50vw;
+    text-align: left;
+}
+
+.compWrapper {
+    width: 100vw;
+    height: 90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp {
+    width: 30vh;
+    height: 24.5vh;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    justify-content: left;
+    align-items: center;
+    z-index: 1;
+}
+
+/*applied to menuBar with JS for sticky header*/
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.buttonWrapper {
+    vertical-align: middle;
+}
+
+.menuButton {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    height: 10vh;
+}
+
+/* gets rid of ugly blue outline on chrome when button clicked*/
+.menuButton:focus {
+    outline: none;
+}
+
+.menuButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.name {
+    position: absolute;
+    right: 1vh;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.infoPage{
+    height: 100vh;
+    width: 100vw;
+}
+
+#about {
+    background-color: white;
+}
+
+#academics {
+    background-color: #FF2400;
+}
+
+#experience {
+    background-color: white;
+}
+
+#contact {
+    background-color: #FF2400;
+}
+
+.aboutTitle {
+    padding-top: 12vh;
+    padding-left: 6vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 5vw;
+}
+
+.academicsTitle {
+    padding-top: 12vh;
+    padding-left: 6vw;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 5vw;
+}
+
+.experienceTitle {
+    padding-top: 12vh;
+    padding-left: 6vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 5vw;
+}
+
+.contactTitle {
+    padding-top: 12vh;
+    padding-left: 6vw;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 5vw;
+}
