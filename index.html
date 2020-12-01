@@ -27,28 +27,41 @@
         </div>
         <p class="name">Melia Tomlinson</p>
     </div>
+
     <div class="content">
         <div class="infoPage" id="about">
             <div class="spacer"></div>
             <p class="aboutTitle">About</p>
+            <p>I am tired of putting things. Will fill in later</p>
         </div>
+
         <div class="infoPage" id="academics">
             <p class="academicsTitle">Academics</p>
+            <p>I am tired of putting things. Will fill in later</p>
         </div>
+
         <div class="infoPage" id="experience">
             <p class="experienceTitle">Experience</p>
+            <p>I am tired of putting things. Will fill in later</p>
         </div>
+
         <div class="infoPage" id="contact">
             <p class="contactTitle">Contact</p>
+            <div class="qsWrapper">
+                <p class="qs">Have a question or want to work together?</p>
+            </div>
             <form action="mailto:meliatomlinson2022@u.northwestern.edu" method="post" enctype="text/plain">
-                Name:<br>
-                <input type="text" name="name"><br>
-                E-mail:<br>
-                <input type="text" name="mail"><br>
-                Comment:<br>
-                <input type="text" name="comment" size="50"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
+                <div class="inputs">
+                    <textarea type="text" name="name" placeholder="Name"></textarea>
+                    <br>
+                    <textarea type="email" name="mail" placeholder="Email"></textarea>
+                    <br>
+                    <textarea id="messageBox" name="comment" placeholder="Message"></textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </div>
             </form>
         </div>
     </div>
