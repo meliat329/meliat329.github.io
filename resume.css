@@ -11,8 +11,8 @@ body {
     height: 90vh;
     background: linear-gradient(
         to right,
-        #FF2400 0%,
-        #FF2400 50%,
+        #EF7564 0%,
+        #EF7564 50%,
         #FFFFFF 50%,
         #FFFFFF 100%
     );
@@ -80,6 +80,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     height: 10vh;
+    cursor: pointer;
 }
 
 /* gets rid of ugly blue outline on chrome when button clicked*/
@@ -110,7 +111,7 @@ body {
 }
 
 #academics {
-    background-color: #FF2400;
+    background-color: #EF7564;
 }
 
 #experience {
@@ -118,7 +119,7 @@ body {
 }
 
 #contact {
-    background-color: #FF2400;
+    background-color: #EF7564;
 }
 
 .aboutTitle {
@@ -153,4 +154,75 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     font-size: 5vw;
+}
+
+.qsWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.qs {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: larger;
+}
+
+.inputs {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.inputs textarea{
+    background-color: #CF513D;
+    border: none;
+    width: 70vw;
+    height: 4vh;
+    margin-bottom: 1vh;
+    color: white;
+    resize: none;
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+::placeholder {
+    color: white;
+    opacity: 70%;
+}
+
+.inputs textarea:focus {
+    outline: none;
+}
+
+#messageBox {
+    height: 40vh;
+}
+
+.buttons {
+    width: 85vw;
+    display: block;
+    text-align: right;
+}
+
+.buttons input{
+    cursor: pointer;
+    background-color: transparent;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    color: white;
+    font-size: 3vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.buttons input:focus {
+    outline: none;
+}
+
+.buttons input:hover {
+    background-color: white;
+    color: #EF7564;
 }
