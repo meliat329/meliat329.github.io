@@ -16,10 +16,15 @@ function myFunction() {
     }
 }
 
+var x = 0;
+
+function scrollHome() {
+    window.scrollTo(0, 0);
+    x = 0;
+}
 
 var aboutPos = document.getElementById("about");
 var nav = document.getElementById("myMenuBar");
-var x = 0;
 
 function scrollAbout() {
     if (x == 0) {
@@ -33,21 +38,38 @@ function scrollAbout() {
 
 var academPos = document.getElementById("academics");
 function scrollAcademics() {
-    window.scrollTo(0, academPos.offsetTop);
+    if (x == 0) {
+        window.scrollTo(0, (academPos.offsetTop - nav.offsetHeight));
+        x += 1;
+    }
+    else {
+        window.scrollTo(0, academPos.offsetTop);
+    }
 }
 
 var expPos = document.getElementById("experience");
 function scrollExperience() {
-    window.scrollTo(0, expPos.offsetTop);
+    if (x == 0) {
+        window.scrollTo(0, (expPos.offsetTop - nav.offsetHeight));
+        x += 1;
+    }
+    else {
+        window.scrollTo(0, expPos.offsetTop);
+    }
 }
 
 var contPos = document.getElementById("contact");
 function scrollContact() {
-    window.scrollTo(0, contPos.offsetTop);
+    if (x == 0) {
+        window.scrollTo(0, (contPos.offsetTop - nav.offsetHeight));
+        x += 1;
+    }
+    else {
+        window.scrollTo(0, contPos.offsetTop);
+    }
 }
 
 var frmvalidator = new Validator("contactform");
 frmvalidator.addValidation("name", "req", "Please provide your name");
 frmvalidator.addValidation("email", "req", "Please provide your email");
 frmvalidator.addValidation("email", "email", "Please enter a valid email address");
-
