@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class="arrow">
+        <a href="#" title="Back to Top"><span class="fas fa-angle-up" id="arrow"></span></a>
+    </div>
     <div class="loadup">
         <p class="dLeft">Designer</p>
         <div class="compWrapper">
@@ -20,6 +23,7 @@
     </div>
     <div class="menuBar" id="myMenuBar">
         <div class="buttonWrapper">
+            <button class="menuButton" onclick=scrollHome()>HOME</button>
             <button class="menuButton" onclick="scrollAbout()">ABOUT</button>
             <button class="menuButton" onclick="scrollAcademics()">ACADEMICS</button>
             <button class="menuButton" onclick="scrollExperience()">EXPERIENCE</button>
@@ -29,20 +33,65 @@
     </div>
 
     <div class="content">
+
         <div class="infoPage" id="about">
-            <div class="spacer"></div>
             <p class="aboutTitle">About</p>
-            <p>I am tired of putting things. Will fill in later</p>
+            <p>I'm a student at Northwestern University studying computer science and working on the Segal Design
+                Certificate
+            </p>
+            <p>I am passionate about designing unique user-friendly interfaces and everything about front-end
+                programming. I also enjoy learning about and working on back-end projects. When I am not
+                studying you can find me giving my cat, Navi (total Zelda nerd) attention, taking care
+                of my plants, or cooking up something delicious in the kitchen!
+            </p>
+            <img class="myPic" src="" alt="A Picture of Me">
+            <img class="naviPic" src="" alt="A Picture of My Cat">
         </div>
 
         <div class="infoPage" id="academics">
             <p class="academicsTitle">Academics</p>
-            <p>I am tired of putting things. Will fill in later</p>
+            <p>Degree: Bachelor of Arts in Computer Science with the Segal Design Certificate</p>
+            <p>Intending to also do the BA/MS program in Computer Science with a focus on Human Computer Interaction</p>
+            <p>Computer Science Courses</p>
+            <ul>
+                <li>Intro to Computer Science for Everyone</li>
+                <li>Fundamental Computer Programming</li>
+                <li>Fundamentals of Computer Programming II</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Intro to AI</li>
+                <li>Human Computer Interaction</li>
+                <li>Mathematical Foundations of Computer Science</li>
+                <li>Intro to Computer Graphics</li>
+                <li>Intro to Computer Systems</li>
+                <li>Intro to Networking (In Progress)</li>
+                <li>Technology and Human Interaction</li>
+            </ul>
+            <p>Design Courses</p>
+            <ul>
+                <li>Design, Thinking, and Doing</li>
+                <li>Service Design</li>
+            </ul>
         </div>
 
         <div class="infoPage" id="experience">
             <p class="experienceTitle">Experience</p>
-            <p>I am tired of putting things. Will fill in later</p>
+            <div>
+                <p>Positions</p>
+                <p>Peer Mentor</p>
+                <ul>
+                    <li></li>
+                </ul>
+                <p>Direct Imaging Team Member</p>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <p>Projects</p>
+                <p>Animation, Camera Movement, and Lighting in WebGL</p>
+                <p>Student Health Leaders Program Redesign</p>
+            </div>
+
         </div>
 
         <div class="infoPage" id="contact">
