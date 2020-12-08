@@ -255,39 +255,14 @@ body {
 
 .projects {
     grid-column: 2 / span 1;
-    margin-left: -12vw;
-}
-
-.ptContainer {
-    position: relative;
-    text-align: center;
-    color: black;
 }
 
 .expPic {
     width: 15vw;
-    margin-left: -20vw;
-    margin-top: -3vh;
-    margin-bottom: 2vh;
 }
 
 .expPic:hover {
     opacity: 0.3;
-}
-
-.imageText {
-    position: absolute;
-    top: 30%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-}
-
-#imageGDText {
-    visibility: hidden;
-}
-
-#imageSDText {
-    visibility: hidden;
 }
 
 .subTitle{
