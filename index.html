@@ -36,64 +36,116 @@
 
         <div class="infoPage" id="about">
             <p class="aboutTitle">About</p>
-            <p>I'm a student at Northwestern University studying computer science and working on the Segal Design
-                Certificate
-            </p>
-            <p>I am passionate about designing unique user-friendly interfaces and everything about front-end
-                programming. I also enjoy learning about and working on back-end projects. When I am not
-                studying you can find me giving my cat, Navi (total Zelda nerd) attention, taking care
-                of my plants, or cooking up something delicious in the kitchen!
-            </p>
-            <img class="myPic" src="" alt="A Picture of Me">
-            <img class="naviPic" src="" alt="A Picture of My Cat">
+            <div class="aboutWrapper">
+                <div class="aboutText">
+                    <p class="introLine">I'm a student at Northwestern University studying computer science and working
+                        on the Segal
+                        Design
+                        Certificate.
+                    </p>
+                    <p>I am passionate about designing unique user-friendly interfaces and everything about front-end
+                        programming. I also enjoy learning about and working on back-end projects. When I am not
+                        studying you can find me giving my cat, Navi (total Zelda nerd) attention, taking care
+                        of my plants, enjoying the outdoors, or cooking up something delicious in the kitchen!
+                    </p>
+                </div>
+                <div class="aboutPics">
+                    <img class="myPic" src="https://i.postimg.cc/RZR9QmRB/IMG-2558.jpg" alt="A Picture of Me">
+                    <img class="naviPic" src="https://i.postimg.cc/P5hTwJ1y/IMG-1179.jpg" alt="A Picture of My Cat">
+                </div>
+            </div>
         </div>
 
         <div class="infoPage" id="academics">
             <p class="academicsTitle">Academics</p>
-            <p>Degree: Bachelor of Arts in Computer Science with the Segal Design Certificate</p>
-            <p>Intending to also do the BA/MS program in Computer Science with a focus on Human Computer Interaction</p>
-            <p>Computer Science Courses</p>
-            <ul>
-                <li>Intro to Computer Science for Everyone</li>
-                <li>Fundamental Computer Programming</li>
-                <li>Fundamentals of Computer Programming II</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Intro to AI</li>
-                <li>Human Computer Interaction</li>
-                <li>Mathematical Foundations of Computer Science</li>
-                <li>Intro to Computer Graphics</li>
-                <li>Intro to Computer Systems</li>
-                <li>Intro to Networking (In Progress)</li>
-                <li>Technology and Human Interaction</li>
-            </ul>
-            <p>Design Courses</p>
-            <ul>
-                <li>Design, Thinking, and Doing</li>
-                <li>Service Design</li>
-            </ul>
+            <div class="acaWrapper">
+                <div class="classPics">
+                    <img class="csPic"
+                        src="data:image/png;base64,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"
+                        alt="Northwestern Computer Science Logo">
+                    <br>
+                    <img class="dsgnPic"
+                        src="data:image/png;base64,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"
+                        alt="Northwestern Design Logo">
+                </div>
+                <div class="acaWords">
+                    <p class="degreeLine">Degree: Bachelor of Arts in Computer Science with the Segal Design Certificate
+                    </p>
+                    <p class="intentLine">Intending to pursue the BA/MS program in Computer Science with a focus on
+                        Human
+                        Computer Interaction</p>
+                    <div class="courses">
+                        <div class="csCourses">
+                            <p>Computer Science Courses</p>
+                            <ul>
+                                <li>Intro to Computer Science for Everyone</li>
+                                <li>Fundamental Computer Programming</li>
+                                <li>Fundamentals of Computer Programming II</li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Intro to AI</li>
+                                <li><b>Human Computer Interaction</b></li>
+                                <li>Mathematical Foundations of Computer Science</li>
+                                <li><b>Intro to Computer Graphics</b></li>
+                                <li>Intro to Computer Systems</li>
+                                <li>Intro to Networking (In Progress)</li>
+                                <li><b>Technology and Human Interaction</b></li>
+                            </ul>
+                        </div>
+                        <div class="dsgnCourses">
+                            <p>Design Courses</p>
+                            <ul>
+                                <li>Design, Thinking, and Doing</li>
+                                <li><b>Service Design</b></li>
+                                <li><b>Human Computer Interaction</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="infoPage" id="experience">
             <p class="experienceTitle">Experience</p>
-            <div>
-                <p>Positions</p>
-                <p>Peer Mentor</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <p>Direct Imaging Team Member</p>
-                <ul>
-                    <li></li>
-                </ul>
+            <div class="expWrapper">
+                <div class="positions">
+                    <p class="subTitle">Positions</p>
+                    <div class="expInfo">
+                        <p>Peer Mentor <i>(CS111)</i></p>
+                        <ul class="expList">
+                            <li>Taught two tutorial sections each with 5+ students foundational CS principles</li>
+                            <li>Held weekly office hours to assist students in class work and independent endeavors</li>
+                            <li>Worked under Dr. Ian Horswill with 28 other peer mentors to create tutorials and shape
+                                class structure</li>
+                        </ul>
+                        <p>Direct Imaging Team Member</p>
+                        <ul class="expList">
+                            <li>Analyzed python library (pyKLIP) used for the direct imaging of exoplanets</li>
+                            <li>Cooperated with a 4 member team to research machine learning in the direct imaging of
+                                exoplanets</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="projects">
+                    <p class="subTitle">Projects</p>
+                    <div class="expInfo">
+                        <div class="ptContainer">
+                            <a href="https://meliat329.github.io/meliatProjectC/" target="_blank"><img
+                                    onmouseenter="visibleGDText()" onmouseleave="hiddenGDText()" class="expPic"
+                                    src="https://i.postimg.cc/kgs4DcWs/Screen-Shot-2020-12-07-at-12-03-04-PM-Cropped.png"></a>
+                            <p class="imageText" id="imageGDText">Animation, Camera Movement, and Lighting in WebGL
+                            </p>
+                        </div>
+                        <div class="ptContainer">
+                            <a href="https://app.mural.co/t/dsgn382servicedesignstudio1597/m/dsgn382servicedesignstudio1597/1607364389435/b3e3db641b3c0a6e9402dad4c564abe99b746de6"
+                                target="_blank"><img onmouseenter="visibleSDText()" onmouseleave="hiddenSDText()"
+                                    class="expPic"
+                                    src="https://i.postimg.cc/cCf1WMsQ/Screen-Shot-2020-12-07-at-12-53-46-PM-Cropped.png"></a>
+                            <p class="imageText" id="imageSDText">Student Health Leaders Program Redesign</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Projects</p>
-                <p>Animation, Camera Movement, and Lighting in WebGL</p>
-                <p>Student Health Leaders Program Redesign</p>
-            </div>
-
         </div>
-
         <div class="infoPage" id="contact">
             <p class="contactTitle">Contact</p>
             <div class="qsWrapper">
