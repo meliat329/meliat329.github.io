@@ -68,23 +68,3 @@ function scrollContact() {
         window.scrollTo(0, contPos.offsetTop);
     }
 }
-
-var expSDImage = document.getElementById("imageSDText");
-
-function visibleSDText() {
-    expSDImage.style.visibility = "visible";
-}
-
-function hiddenSDText() {
-    expSDImage.style.visibility = "hidden";
-}
-
-var expGDImage = document.getElementById("imageGDText");
-
-function visibleGDText() {
-    expGDImage.style.visibility = "visible";
-}
-
-function hiddenGDText() {
-    expGDImage.style.visibility = "hidden";
-}
