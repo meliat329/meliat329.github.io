@@ -69,7 +69,22 @@ function scrollContact() {
     }
 }
 
-var frmvalidator = new Validator("contactform");
-frmvalidator.addValidation("name", "req", "Please provide your name");
-frmvalidator.addValidation("email", "req", "Please provide your email");
-frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+var expSDImage = document.getElementById("imageSDText");
+
+function visibleSDText() {
+    expSDImage.style.visibility = "visible";
+}
+
+function hiddenSDText() {
+    expSDImage.style.visibility = "hidden";
+}
+
+var expGDImage = document.getElementById("imageGDText");
+
+function visibleGDText() {
+    expGDImage.style.visibility = "visible";
+}
+
+function hiddenGDText() {
+    expGDImage.style.visibility = "hidden";
+}
