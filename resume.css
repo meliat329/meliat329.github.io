@@ -108,35 +108,123 @@ body {
 
 #about {
     background-color: white;
+    font-family: 'Oswald', sans-serif;
 }
 
 #academics {
     background-color: #EF7564;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
 
 #experience {
     background-color: white;
+    font-family: 'Oswald', sans-serif;
 }
 
 #contact {
     background-color: #EF7564;
+    color: white;
+    font-family: 'Oswald', sans-serif;
 }
 
 .aboutTitle {
     padding-top: 12vh;
     padding-left: 6vw;
-    font-family: 'Oswald', sans-serif;
     font-weight: 200;
     font-size: 5vw;
+}
+
+.aboutWrapper {
+    display: grid;
+}
+
+.aboutText {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 2vw;
+    grid-column: 1/ span 1;
+    padding-left: 2vw;
+    text-align: justify;
+}
+
+.introLine {
+    font-weight: 400;
+}
+
+.aboutPics {
+    grid-column: 2/ span 1;
+    display: block;
+    text-align: center;
+    margin-top: -11vh;
+    margin-right: -5vw;
+}
+
+.myPic { 
+    max-width: 50%;  
+    height: auto;  
+    padding-bottom: 2vh; 
+}
+
+.naviPic { 
+    max-width: 50%;  
+    height: auto;   
 }
 
 .academicsTitle {
     padding-top: 12vh;
     padding-left: 6vw;
+    margin-bottom: 7vh;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     font-size: 5vw;
+}
+
+.acaWrapper {
+    display: grid;
+}
+
+.acaWords {
+    grid-column: 2 / span 1;
+}
+.degreeLine {
+    font-size: 4vh;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 2px;
+    margin-left: 2vw;
+    text-decoration: underline;
+}
+
+.intentLine {
+    font-size: 3.5vh;
+    font-weight: 300;
+    margin-top: 0;
+    margin-left: 4vw;
+}
+.courses {
+    display: grid;
+    grid-template-columns: max-content;
+    font-weight: 200;
+    font-size: larger;
+    width: 100vw;
+    margin-left: 10vw;
+}
+
+.csCourses{
+    grid-column: 1 / span 1;
+    margin-left: 1vw;
+    margin-right: 0;
+}
+
+.dsgnCourses {
+    grid-column: 2 / span 1;
+}
+
+.classPics{
+    grid-column: 1 / span 1;
+    margin-left: 2vw;
 }
 
 .experienceTitle {
@@ -145,6 +233,67 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     font-size: 5vw;
+    margin-bottom: 2vh;
+}
+
+.expWrapper {
+    display: grid;
+}
+
+.positions {
+    grid-column: 1 / span 1;
+    margin-left: 3vw;
+}
+
+.expInfo {
+    font-size: 2.5vh;
+}
+
+.expList {
+    font-weight: 200;
+}
+
+.projects {
+    grid-column: 2 / span 1;
+    margin-left: -12vw;
+}
+
+.ptContainer {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.expPic {
+    width: 15vw;
+    margin-left: -20vw;
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+}
+
+.expPic:hover {
+    opacity: 0.3;
+}
+
+.imageText {
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+
+#imageGDText {
+    visibility: hidden;
+}
+
+#imageSDText {
+    visibility: hidden;
+}
+
+.subTitle{
+    text-decoration: underline;
+    font-size: 5vh;
+    font-weight: 200;
 }
 
 .contactTitle {
