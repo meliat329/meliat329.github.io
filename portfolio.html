@@ -3,28 +3,115 @@
     <head>
         <title>Melia Tomlinson</title>
         <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!--contact logos-->
+        <div class = "logoContainer">
+            <a href="portfolio.html">
+                <img class="logo" src="images\linkedin-logo.png" alt="Linkedin Logo" 
+                onmouseover="this.src= 'images/linkedin-logo-blue.png'"
+                onmouseout="this.src= 'images/linkedin-logo.png'">
+            </a>
+            <a href="portfolio.html">
+                <img class="logo" src="C:\Users\Melia\OneDrive\Documents\GitHub\portfolio\images\github-logo.png" alt="Github Logo"
+                onmouseover="this.src= 'images/github-logo-blue.png'"
+                onmouseout="this.src= 'images/github-logo.png'">
+            </a>
+            <a href="portfolio.html">
+                <img class="logo" src="C:\Users\Melia\OneDrive\Documents\GitHub\portfolio\images\mail.png" alt="Mail Logo"
+                onmouseover="this.src= 'images/mail-blue.png'"
+                onmouseout="this.src= 'images/mail.png'">
+            </a>
+        </div>
         <!--header-->
         <div class="header">
             <h1>melia</h1>
             <div class="nav">
-                <h2>projects</h2>
+                <h2><b><a href="portfolio.html">projects</b></a></h2>
                 <h2>&nbsp | </h2>
-                <h2>&nbsp about </h2>
+                <h2><a href="portfolio.html">&nbsp about</a></h2>
                 <h2>&nbsp | </h2>
-                <h2>&nbsp hobbies</h2>
+                <h2><a href="portfolio.html">&nbsp hobbies</a></h2>
             </div>
             <h3>the future of innovative technology lies in human-centered thinking and the mindset
                  that every idea is worth pursuing further</h3>
         </div>
         <!--images-->
-        <div class = "images">
-            <img src="./images/sketch.png" alt="Sketch">
-            <img src="./images/sketch.png" alt="Sketch">
+        <div class = "galContainer">
+            <div class = "myGallery">
+                <a href="portfolio.html">
+                    <img src="images\unity.png" alt="Unity Games"
+                    onmouseover="this.src= 'images/unity-blue.png'"
+                    onmouseout="this.src= 'images/unity.png'"
+                    data-aos="fade-up"
+                    data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                    <img src="images\sketch.png" alt="Sketch of Raspberry Pi Theremin"
+                    onmouseover="this.src= 'images/sketch.png'"
+                    onmouseout="this.src= 'images/sketch.png'"
+                    data-aos="fade-up"
+                    data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                <img src="images\sketch.png" alt="Sketch of Children's Coding Exhibit"
+                onmouseover="this.src= 'images/sketch.png'"
+                onmouseout="this.src= 'images/sketch.png'"
+                data-aos="fade-up"
+                data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                    <img src="images\classicalmusic.png" alt="Classical Music Listening Application"
+                    onmouseover="this.src= 'images/classicalmusic-blue.png'"
+                    onmouseout="this.src= 'images/classicalmusic.png'"
+                    data-aos="fade-up"
+                    data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                    <img src="images\leetlink.png" alt="LeetLink Application"
+                    onmouseover="this.src= 'images/leetlink-blue.png'"
+                    onmouseout="this.src= 'images/leetlink.png'"
+                    data-aos="fade-up"
+                    data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                <img src="images\webgl.png" alt="WebGL Shading and Lighting Project"
+                onmouseover="this.src= 'images/webgl-blue.png'"
+                onmouseout="this.src= 'images/webgl.png'"
+                data-aos="fade-up"
+                data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                <img src="images\shl.png" alt="Student Health Leaders Logo"
+                onmouseover="this.src= 'images/shl-blue.png'"
+                onmouseout="this.src= 'images/shl.png'"
+                data-aos="fade-up"
+                data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                <img src="images\mask.png" alt="Drive-Thru Mask"
+                onmouseover="this.src= 'images/mask-blue.png'"
+                onmouseout="this.src= 'images/mask.png'"
+                data-aos="fade-up"
+                data-aos-duration="700">
+                </a>
+                <a href="portfolio.html">
+                <img src="images\threearts.jpg" alt="Three Arts Club"
+                onmouseover="this.src= 'images/threearts-blue.png'"
+                onmouseout="this.src= 'images/threearts.jpg'"
+                data-aos="fade-up"
+                data-aos-duration="700">
+                </a>
+            </div>
         </div>
+        <script src="portfolio.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
