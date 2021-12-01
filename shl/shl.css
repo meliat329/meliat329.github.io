@@ -131,3 +131,11 @@ h4 {
     display: flex;
     justify-content: center;
 }
+.mainPic{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5vh;
+}
+.shlColor{
+    border: 1px solid black;
+}
