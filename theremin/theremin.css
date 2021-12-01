@@ -93,8 +93,7 @@ h4 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 14px;
     line-height: 1.5;
-    max-width: 1024px;
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
 }
 .timeline-item {
@@ -130,4 +129,11 @@ h4 {
 }
 .timeline-item:last-child {
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+.mainPic{
+    display: flex;
+    justify-content: center;
+}
+.thereminBig{
+    width: 60%;
 }
