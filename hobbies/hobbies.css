@@ -52,3 +52,26 @@ a:hover {
     top: 5vh;
     left: 80vw;
 }
+img{
+    width: 30%;
+}
+
+figcaption{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1);
+    gap: 10px;
+    grid-auto-rows: minmax(300px, auto);
+}
+
+.blog1{
+    grid-column: 1/2;
+    grid-row: 1;
+}
