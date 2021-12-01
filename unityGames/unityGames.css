@@ -100,3 +100,7 @@ a:hover {
     top: 5%;
     left: 80%;
 }
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+}
