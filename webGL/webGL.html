@@ -2,13 +2,12 @@
 <html lang="en">
     <head>
         <title>Melia Tomlinson</title>
-        <link rel="stylesheet" href="unityGames.css">
+        <link rel="stylesheet" href="webGL.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <!--contact logos-->
         <div class = "logoContainer">
@@ -28,57 +27,43 @@
                 onmouseout="this.src= '../images/mail.png'">
             </a>
         </div>
-
         <!--header-->
         <div class="header">
             <h1>melia</h1>
             <div class="nav">
-                <h2><a href="..\index.html">projects</a></h2>
+                <h2><b><a href="../index.html">projects</b></a></h2>
                 <h2>&nbsp | </h2>
-                <h2><a href="..\index.html">&nbsp about</a></h2>
+                <h2><a href="../about/about.html">&nbsp about</a></h2>
                 <h2>&nbsp | </h2>
-                <h2><a href="..\index.html">&nbsp hobbies</a></h2>
+                <h2><a href="../hobbies/hobbies.html">&nbsp hobbies</a></h2>
             </div>
         </div>
 
-        <!-- Project Title -->
         <div>
-            <h3>Simple Beginner Unity Games</h3>
+            <h3>WebGL Graphics and Shading</h3>
         </div>
 
-        <!-- Project Images -->
-        <div>
-            INSERT IMAGES
+        <div class="imageContainer">
+            <a href="https://meliat329.github.io/meliatProjectC/" target="_blank" rel="noopener noreferrer">
+                <img class ="img" src = "../images/bigWebGL.png">
+            </a>
         </div>
 
         <!-- Project Short Info -->
         <div class="shortContainer">
             <div class="shortInfo">
-                <p><b>Date:</b> Fall 2021</p>
-                <p><b>Role:</b> Game Designer and Developer</p>
-                <p><b>Course:</b> Computer Game Design And Development</p>
-                <p><b>Skills:</b> Game Design, Unity, C#</p>
+                <p><b>Date:</b> Fall 2020</p>
+                <p><b>Role:</b> Partner</p>
+                <p><b>Course:</b> Introduction to Computer Graphics</p>
+                <p><b>Skills:</b> WebGL, HTML, CSS, JavaScript, 3D Lighting and Shading Techniques</p>
             </div>
         </div>
+
         <div class="longContainer">
             <div class="longInfo">
-                <p>I designed and created these simple 2D Unity Games from scratch for week-long projects in Game Design and Development class. This included finding sprites, using 
-                physics simulators, and coding all of the game mechanics. </p>
-
-                <p>The first game is a simple platformer where you collect coins and avoid obstacles to get to the finish line. Players use the right and left arrow keys or A and D 
-                to move left and right, and the space bar to jump. </p>
-
-                <p>The second game is a "fruit catch" style game, but way more cute of course. The player moves the basket left and right to catch the falling kitties, but should avoid the evil dogs.
-                Catching a kittie gives the player one point, while catching a dog causes the player to lose a life. Once the player loses all three lives the game is over and the
-                score is displayed along with the option to restart. </p>
+                <p>The goal of this project was to combine knowledge of animation of 3D figures and user movements with lighting and shading to create 
+                    a world including all three using two different types of shading (Gouraurd and Phong) and two different types of lighting (Phong and 
+                    Blinn-Phong). This is an example of an especially well done final project for the course, and later earned me a position as a <b>Peer 
+                    Mentor</b> (Undergrad TA) in the course. </p>
             </div>
         </div>
-        <!-- <a href="kittyCatch/index.html">kitty catcher</a>  NEED TO FIX (DISABLE COMPRESSION)-->
-        <!-- <a href="simplePlatformer/index.html">platformer</a> NEED TO FIX (DISABLE COMPRESSION)-->
-        <script src="portfolio.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-    </body>
-</html>

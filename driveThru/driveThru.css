@@ -1,16 +1,15 @@
 html{
-    overflow-x: hidden;
+    overflow-y: overlay;
 }
 
 h1 {
     position: relative;
-    width: 100%;
     margin-top: 8%;
     margin-bottom: 0;
 
     display: flex;
-    align-items: center; /* Vertical center alignment */
-    justify-content: center; /* Horizontal center alignment */
+    align-items: center;
+    justify-content: center;
 
     font-family: 'Cormorant Garamond', serif;
     font-style: normal;
@@ -26,14 +25,35 @@ h2 {
     font-size: 34px;
     color: #000000;
 }
+
 .nav {
     position: relative;
-    width: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+   color: #6D829B;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding-right: 15px;
+}
+
+.logoContainer{
+    position: absolute;
+    top: 5vh;
+    left: 80vw;
 }
 
 h3{
@@ -64,39 +84,4 @@ h3{
 .shortContainer{
     display: flex;
     justify-content: center;
-}
-
-.longContainer{
-    display: flex;
-    justify-content: center;
-}
-
-.longInfo{
-    width: 60%;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
-    color: #000000;
-    font-weight: 400;
-    line-height: 29px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-   color: #6D829B;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    padding-right: 15px;
-}
-
-.logoContainer{
-    position: absolute;
-    top: 5%;
-    left: 80%;
 }
